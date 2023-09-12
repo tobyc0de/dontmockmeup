@@ -4,4 +4,4 @@ table {border:1px solid black;}
 html {
     background-image: linear-gradient(lightblue, blue);
   }
-footer {background:black;color:white;}
+footer {background:black;color:white;height:400px;}
