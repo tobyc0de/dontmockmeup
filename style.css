@@ -27,16 +27,15 @@ footer {
 .top {
   background:linear-gradient(blue, #70d6ff);
   padding-left:20px;
-  border:5px solid transparent  ;
+  border:5px solid transparent ;
+  border-bottom:none;
 
 }
 
 main {
   padding-left:20px;
 }
-.top:hover {
-  border:5px solid #ff70a6;
-}
+
 
 .navlink {
   text-decoration:none;
