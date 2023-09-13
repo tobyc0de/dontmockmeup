@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="all" href="style.css">
+    
+   
     <title>ugly css page!</title>
 </head>
 <body>
     <header class="top">
         <h1>
-            really ugly page for CSS testing
+            <script src="./hello_user_time.js"></script>
         </h1>
+        
         <a class="navlink" href="page2.html">Page 2</a> | <a  class="navlink" href="page3.html">Page 3</a> | <a  class="navlink" href="page3.html">Page 4</a>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quia eius ex quo laudantium, illo explicabo accusamus veniam doloremque ut modi quae, nemo vel a. Quos fugit nulla officiis earum!
@@ -69,6 +72,24 @@ images here
         </table>
 
     </section>
+
+    <div id="add_to_me">
+        <h1>Add some cheese to the pizza</h1>
+     
+    </div>
+    <div class="buttondiv">
+    <button onclick="addCode()" id="cheesebutton">
+        🧀 I NEED MORE CHEEEEESE! 🧀
+    </button>
+</div>
+    <script>
+        function addCode() {
+            document.getElementById("add_to_me")
+                .innerHTML +=
+"<h3>🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀</h3>";
+        }
+    </script>
+  
 </main>
 <footer>
     <p>footer</p>
