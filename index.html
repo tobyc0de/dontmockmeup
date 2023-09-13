@@ -72,14 +72,13 @@ images here
         </table>
 
     </section>
-
-    <div id="add_to_me">
-        <h1>Add some cheese to the pizza</h1>
-     
-    </div>
+   <h2>Ingredient Adding Tool</h2>
     <div class="buttondiv">
     <button onclick="addCode()" id="cheesebutton">
         🧀 I NEED MORE CHEEEEESE! 🧀
+    </button>
+    <button onclick="addCode2()" id="pinebutton">
+        🍍 I NEED MORE PINEAPPLE! 🍍
     </button>
 </div>
     <script>
@@ -89,6 +88,18 @@ images here
 "<h3>🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀</h3>";
         }
     </script>
+
+        <script>
+            function addCode2() {
+                document.getElementById("add_to_me")
+                    .innerHTML +=
+    "<h3>💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩</h3>";
+            }
+        </script>
+     <div id="add_to_me">
+        
+     
+     </div>
   
 </main>
 <footer>
