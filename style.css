@@ -17,6 +17,8 @@ footer {
   vertical-align: middle;
   display:flex;
   margin-top: 5rem;
+  margin-left:10px;
+  padding-left:10px;
 
 }
 .top {
