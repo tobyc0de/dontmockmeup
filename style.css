@@ -27,7 +27,7 @@ footer {
 .top {
   background:linear-gradient(blue, #70d6ff);
   padding-left:20px;
-  border:5px solid #ffd80e  ;
+  border:5px solid transparent  ;
 
 }
 
