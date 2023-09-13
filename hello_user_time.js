@@ -12,7 +12,7 @@ if(time <= 11) {
 } else if(time <25) {
     message = "Good evening!";
 } else {
-    message = "You are a mad man/woman/other!" + " That is not a time"};
+    message = "You are a mad man/woman/person!" + " That is not a time"};
 
 message ="Hello " + username + ". " + message;
 
