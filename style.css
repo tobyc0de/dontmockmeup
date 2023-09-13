@@ -1,7 +1,29 @@
 .halfwide {max-width:48%;max-height:500px;float:left;padding:15px;}
 .images, .table {clear:both;}
 table {border:1px solid black;}
-html {
+body {
     background-image: linear-gradient(lightblue, blue);
   }
 footer {background:black;color:white;height:400px;}
+.top {
+  background:linear-gradient(blue, lightblue);
+  border:1px dotted blue;
+}
+.top:hover {
+  background:linear-gradient(lightblue, blue);
+}
+
+.navlink {
+  text-decoration:none;
+
+}
+
+a {
+text-decoration: none;
+color:black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color:#ffd80e;
+  }
