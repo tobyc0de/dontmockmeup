@@ -101,6 +101,25 @@ images here
      
      </div>
   
+     <h2>
+        Testing the confirm function
+     </h2>
+<button onclick="myFunction()">
+    Why don't you give it a try
+</button>  
+<p id="conf"></p>  
+<script>  
+function myFunction() {  
+    var result;  
+    var r = confirm("Whatcha wann do?!");  
+    if (r == true) {  
+        result = "You have selected OK! Great job :)";  
+    } else {  
+        result = "You have selected Cancel! Well done :)";  
+    }  
+    document.getElementById("conf").innerHTML = result;  
+}  
+</script>  
 </main>
 <footer>
     <p>footer</p>
