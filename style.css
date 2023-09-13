@@ -6,7 +6,10 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:blue;;
     margin-left:10px;
+    max-width: 900px;
+    margin: auto;
   }
+
 footer {
   background:rgb(255, 151, 112);
   color:white;
@@ -37,11 +40,18 @@ main {
 
 .navlink {
   text-decoration:none;
+  border:1px solid #70d6ff;
+  background: #70d6ff;
+  border-radius:10px;
+  padding: 5px 10px;
+  text-shadow: black 1px 1px 1px;
+
 }
 
 a {
 text-decoration: none;
 color:#ffd80e;
+text-shadow: black 1px 1px 1px;
 }
 
 a:hover {
@@ -68,6 +78,7 @@ h2 {
 
 h1, h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: black 1px 1px 1px;
 }
 
 .imagemockup:hover {
