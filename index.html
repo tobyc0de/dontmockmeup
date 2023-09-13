@@ -13,14 +13,66 @@
         <h1>
             <script src="./hello_user_time.js"></script>
         </h1>
-        <p>your favorite <span id="colorp">colour</span></p>
+        
         
         <a class="navlink" >Page 2</a> | <a  class="navlink">Page 3</a> | <a  class="navlink" >Page 4</a>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quia eius ex quo laudantium, illo explicabo accusamus veniam doloremque ut modi quae, nemo vel a. Quos fugit nulla officiis earum!
-        </p>
+        <p>Your favorite <span id="colorp">colour</span>! Check out the pizza further down for some more JS stuff.</p>
+   
     </header>
     <main>
+    <section id="jsstuff">
+        <h2>Ingredient Adding Tool</h2>
+    <div class="buttondiv">
+    <button onclick="addCode()" id="cheesebutton">
+        🧀 I NEED MORE CHEEEEESE! 🧀
+    </button>
+    <button onclick="addCode2()" id="pinebutton">
+        🍍 I NEED MORE PINEAPPLE! 🍍
+    </button>
+</div>
+    <script>
+        function addCode() {
+            document.getElementById("add_to_me")
+                .innerHTML +=
+"<h3>🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀</h3>";
+        }
+    </script>
+
+        <script>
+            function addCode2() {
+                document.getElementById("add_to_me")
+                    .innerHTML +=
+    "<h3>💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩</h3>";
+            }
+        </script>
+     <div id="add_to_me"></div>
+  
+     <h2>
+        Testing the confirm function
+     </h2>
+<button onclick="myFunction()">
+    Why don't you give it a try
+</button>  
+<p id="conf"></p>  
+<script>  
+function myFunction() {  
+    var result;  
+    var r = confirm("Whatcha wann do?!");  
+    if (r == true) {  
+        result = "You have selected OK! Great job :)";  
+    } else {  
+        result = "You have selected Cancel! Well done :)";  
+    }  
+    document.getElementById("conf").innerHTML = result;  
+}  
+</script>  
+
+<script>
+let usercolor = prompt("what's your favorite color?")
+console.log(usercolor);
+document.getElementById("colorp").style.background = usercolor;
+</script>
+    </section>
     <section class="mockup">
         <h2>
             What i'm trying to do here
@@ -73,60 +125,7 @@ images here
         </table>
 
     </section>
-   <h2>Ingredient Adding Tool</h2>
-    <div class="buttondiv">
-    <button onclick="addCode()" id="cheesebutton">
-        🧀 I NEED MORE CHEEEEESE! 🧀
-    </button>
-    <button onclick="addCode2()" id="pinebutton">
-        🍍 I NEED MORE PINEAPPLE! 🍍
-    </button>
-</div>
-    <script>
-        function addCode() {
-            document.getElementById("add_to_me")
-                .innerHTML +=
-"<h3>🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀🧀</h3>";
-        }
-    </script>
-
-        <script>
-            function addCode2() {
-                document.getElementById("add_to_me")
-                    .innerHTML +=
-    "<h3>💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩</h3>";
-            }
-        </script>
-     <div id="add_to_me">
-        
-     
-     </div>
-  
-     <h2>
-        Testing the confirm function
-     </h2>
-<button onclick="myFunction()">
-    Why don't you give it a try
-</button>  
-<p id="conf"></p>  
-<script>  
-function myFunction() {  
-    var result;  
-    var r = confirm("Whatcha wann do?!");  
-    if (r == true) {  
-        result = "You have selected OK! Great job :)";  
-    } else {  
-        result = "You have selected Cancel! Well done :)";  
-    }  
-    document.getElementById("conf").innerHTML = result;  
-}  
-</script>  
-
-<script>
-let usercolor = prompt("what's your favorite color?")
-console.log(usercolor);
-document.getElementById("colorp").style.background = usercolor;
-</script>
+   
 </main>
 <footer>
     <p>footer</p>
