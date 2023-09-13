@@ -4,7 +4,7 @@ table {border:1px solid black;}
 body {
     background-image: linear-gradient(lightblue, blue);
   }
-footer {background:black;color:white;height:400px;}
+footer {background:rgb(0, 0, 139);color:white;height:400px;}
 .top {
   background:linear-gradient(blue, lightblue);
   border:1px dotted blue;
@@ -20,10 +20,17 @@ footer {background:black;color:white;height:400px;}
 
 a {
 text-decoration: none;
-color:black;
+color:white;
 }
 
 a:hover {
   text-decoration: underline;
   color:#ffd80e;
   }
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:blueviolet;
+  font-size:3rem;
+  border:1px solid yellow;
+}
