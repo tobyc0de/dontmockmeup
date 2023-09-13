@@ -13,6 +13,7 @@
         <h1>
             <script src="./hello_user_time.js"></script>
         </h1>
+        <p>your favorite <span id="colorp">colour</span></p>
         
         <a class="navlink" >Page 2</a> | <a  class="navlink">Page 3</a> | <a  class="navlink" >Page 4</a>
         <p>
@@ -120,6 +121,12 @@ function myFunction() {
     document.getElementById("conf").innerHTML = result;  
 }  
 </script>  
+
+<script>
+let usercolor = prompt("what's your favorite color?")
+console.log(usercolor);
+document.getElementById("colorp").style.background = usercolor;
+</script>
 </main>
 <footer>
     <p>footer</p>

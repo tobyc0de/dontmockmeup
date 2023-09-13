@@ -116,3 +116,7 @@ h1, h2 {
   display:grid;
   align-content: center;
 }
+
+#colorp {
+  padding:0px 5px;
+}
