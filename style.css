@@ -111,6 +111,14 @@ h1, h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+#bananabutton {
+  background:#ffc83d;
+  color:black;
+  background-position: center;
+  font-size:200%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 #confirmbutton {
   background:#ffc83d;
   color:black;
@@ -132,8 +140,12 @@ h1, h2 {
   cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍍</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 
-#confir,button:hover {
+#confirmbutton:hover {
   cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👀</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+
+#bananabutton:hover {
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 
 #colorp {
