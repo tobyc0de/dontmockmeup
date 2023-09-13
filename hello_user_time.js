@@ -6,13 +6,13 @@ console.log("Hello, " + username);
 let time = prompt("What hour is it? (0-23)");
 
 if(time <= 11) {
-    message = "Good morning";
+    message = "Good morning!";
 } else if(time <= 17) {
    message = "Good afternoon!";
 } else if(time <25) {
     message = "Good evening!";
 } else {
-    message = "you are a mad man or woman!"};
+    message = "You are a mad man/woman/other!" + " That is not a time"};
 
 message ="Hello " + username + ". " + message;
 
