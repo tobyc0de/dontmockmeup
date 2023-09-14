@@ -1,145 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="all" href="style.css">
-    
-   
+    <script src="allthejs.js"></script>
     <title>ugly css page!</title>
 </head>
+
 <body>
-    <header class="top">
-        <h1>
-            <script src="./hello_user_time.js"></script>
-        </h1>
-        
-        
-        <a class="navlink" >Page 2</a> | <a  class="navlink">Page 3</a> | <a  class="navlink" >Page 4</a>
-        <p>Is this your favorite <span id="colorp">colour</span>?</p>
-   
+    <header class="top" id="headerid">
+        <h1>Hello</h1>
+        <a class="navlink" href="#headerid">Top</a><a class="navlink" href="#jsstuff">Pizza</a> | <a class="navlink"
+            href="#footerid">Footer</a> |
     </header>
     <main>
-    <section id="jsstuff">
-        <h2>Pizza Topping Tool</h2>
-    <div class="buttondiv">
-    <button onclick="addCode()" id="cheesebutton">
-        🧀 I NEED MORE CHEEEEESE! 🧀
-    </button>
-    <button onclick="addCode2()" id="pinebutton">
-        🍍 I NEED MORE PINEAPPLE! 🍍
-    </button>
-    <button id="bananabutton" onclick="confirmBanana()">🍌 I NEED MORE BANANA 🍌</button>
-
-</div>
-    <script>
-        function addCode() {
-            document.getElementById("add_to_me")
-                .innerHTML +=
-"<h2>🧀🧀🧀🧀🧀🧀🧀</h2>";
-        }
-    </script>
-
-        <script>
-            function addCode2() {
-                document.getElementById("add_to_me")
-                    .innerHTML +=
-    "<h2>💩💩💩💩💩💩</h2>";
-            }
-        </script>
-     <div id="add_to_me"></div>
-
-<script>
-    function confirmBanana() {
-    confirm("Just ... no.");
-}
-</script>
-  
-     <h2>
-        Testing the confirm function
-     </h2>
-     <div class="buttondiv">
-
-<button onclick="myFunction()" id="confirmbutton">
-    Why don't you give it a try
-</button>  
-</div>
-<p id="conf"></p>  
-<script>  
-function myFunction() {  
-    var result;  
-    var r = confirm("Whatcha wann do?!");  
-    if (r == true) {  
-        result = "You have selected OK! Great job :)";  
-    } else {  
-        result = "You have selected Cancel! Well done :)";  
-    }  
-    document.getElementById("conf").innerHTML = result;  
-}  
-</script>  
-
-<script>
-let usercolor = prompt("what's your favorite color?")
-console.log(usercolor);
-document.getElementById("colorp").style.background = usercolor;
-</script>
-    </section>
-    <section class="mockup">
-        <h2>
-            Some other stuff (older and boring)
-        </h2>
-        <div>
-            <a href="https://i.imgur.com/gF7Cgxr.png" target="_blank"><img  class="halfwide imagemockup" src="https://i.imgur.com/gF7Cgxr.png" alt="asd"></a><br>
-            <a href="https://i.imgur.com/gF7Cgxr.png" target="_blank">🔍 View image </a>
-        </div>
-        <div>
-        
-        <p  class="halfwide">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iste optio obcaecati labore, tempore atque, tempora, qui necessitatibus ullam fugiat iusto rerum odit a. Voluptatibus nulla illum maxime vero sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero delectus cum recusandae aliquid obcaecati! Aliquam, repudiandae perspiciatis repellendus veritatis laudantium sapiente consectetur quae cumque esse? Distinctio illum veritatis explicabo alias. Lorem ipsum dolor sit amet consectetur 
-        </p>
-    </div>
-    </section>
-    <section class="images">
-        <h2>
-images here
-        </h2>
-        <div>
-            <img class="halfwide" src="https://images.immediate.co.uk/production/volatile/sites/30/2022/03/chole-recipe-d0b4d29.jpg?quality=90&webp=true&resize=750,681" alt="">
-            <img  class="halfwide"  src="https://images.immediate.co.uk/production/volatile/sites/30/2022/03/chole-recipe-d0b4d29.jpg?quality=90&webp=true&resize=750,681" alt="">
-        </div>
-    </section>
-    <section class="table">
-        <h2>
-            table here
-        </h2>
-        <table>
-            <tbody>
-                
-                <tr>
-                    <td>
-                        alsd
-                    </td>
-                    <td>
-                        asdasd
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        asdsad
-                    </td>
-                    <td>
-                        asdsad
-                    </td>
-                </tr>
-            
-            </tbody>
-        </table>
-
-    </section>
-   
-</main>
-<footer>
-    <p>footer</p>
-</footer>
+        <section id="jsstuff">
+            <h2>Pizza Topping Tool</h2>
+            <div class="buttondiv">
+                <button onclick="addCheese()" id="cheesebutton">
+                    🧀 I NEED MORE CHEEEEESE! 🧀
+                </button>
+                <button onclick="addPineapple()" id="pinebutton">
+                    🍍 I NEED MORE PINEAPPLE! 🍍
+                </button>
+                <button id="bananabutton" onclick="confirmBanana()">🍌 I NEED MORE BANANA 🍌</button>
+            </div>
+            <div id="pizzaarea"></div>
+    </main>
+    <footer id="footerid">
+        <p>footer</p>
+    </footer>
 </body>
+
 </html>

@@ -1,154 +1,178 @@
-.halfwide {max-width:48%;max-height:250px;float:left;padding:15px;}
-.images, .table, h2 {clear:both;}
-table {border:1px solid #e9ff70;}
+.halfwide {
+  max-width: 48%;
+  max-height: 250px;
+  float: left;
+  padding: 15px;
+}
+
+.images,
+.table,
+h2 {
+  clear: both;
+}
+
+table {
+  border: 1px solid #e9ff70;
+}
+
 body {
-    background: #70d6ff;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:blue;;
-    margin-left:10px;
-    max-width: 900px;
-    margin: auto;
-  }
+  background: #70d6ff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: blue;
+  ;
+  margin-left: 10px;
+  max-width: 900px;
+  margin: auto;
+}
 
 footer {
-  background:rgb(255, 151, 112);
-  color:white;
-  height:400px;
+  background: rgb(255, 151, 112);
+  color: white;
+  height: 400px;
   align-items: center;
   align-content: center;
   align-self: center;
   vertical-align: middle;
-  display:flex;
+  display: flex;
   margin-top: 5rem;
-  margin-left:10px;
-  padding-left:10px;
+  margin-left: 10px;
+  padding-left: 10px;
 
 }
+
 .top {
-  background:linear-gradient(blue, #70d6ff);
-  padding-left:20px;
-  border:5px solid transparent ;
-  border-bottom:none;
+  background: linear-gradient(blue, #70d6ff);
+  padding-left: 20px;
+  border: 5px solid transparent;
+  border-bottom: none;
+  width: 100%;
 
 }
+
+
 
 main {
-  padding-left:20px;
+  padding-left: 20px;
+  top: 100;
 }
 
 
 .navlink {
-  text-decoration:none;
-  border:1px solid #70d6ff;
+  text-decoration: none;
+  border: 1px solid #70d6ff;
   background: #70d6ff;
-  border-radius:10px;
+  border-radius: 10px;
   padding: 5px 10px;
   text-shadow: black 1px 1px 1px;
 
 }
 
 a {
-text-decoration: none;
-color:#ffd80e;
-text-shadow: black 1px 1px 1px;
+  text-decoration: none;
+  color: #ffd80e;
+  text-shadow: black 1px 1px 1px;
 }
 
 a:hover {
   text-decoration: underline;
-  border:5px solid #ff70a6;
-  color:#ff70a6;
-  }
+  border: 5px solid #ff70a6;
+  color: #ff70a6;
+}
 
 h1 {
 
-  font-size:3rem;
-  color:#ffd80e;  
-
-  
+  font-size: 3rem;
+  color: #ffd80e;
 }
 
 h2 {
-  text-shadow:#e9ff70 1px 0 10px;
-  
-  color:#FF1493;
+  text-shadow: #e9ff70 1px 0 10px;
+  color: #FF1493;
   font-size: 2rem;
-
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-shadow: black 1px 1px 1px;
 }
 
 .imagemockup:hover {
-  border:5px solid #ff70a6;
-
+  border: 5px solid #ff70a6;
 }
 
-#add_to_me {
+#pizzaarea {
   background-image: url('./cheese.png');
-  height:auto;
+  height: auto;
   background-repeat: no-repeat;
   text-align: center;
+  min-height: 540px;
+  align-content: center;
   background-position: center;
-  min-height: 500px;
-
 }
 
+
 #cheesebutton {
-  background:#ffc83d;
-  color:black;
+  background: #ffc83d;
+  color: black;
   background-position: center;
-  font-size:200%;
+  font-size: 200%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 5px;
 }
 
 #pinebutton {
-  background:#ffc83d;
-  color:black;
+  background: #ffc83d;
+  color: black;
   background-position: center;
-  font-size:200%;
+  font-size: 200%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 5px;
 }
 
 #bananabutton {
-  background:#ffc83d;
-  color:black;
+  background: #ffc83d;
+  color: black;
   background-position: center;
-  font-size:200%;
+  font-size: 200%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 10px;
 }
 
 #confirmbutton {
-  background:#ffc83d;
-  color:black;
+  background: #ffc83d;
+  color: black;
   background-position: center;
-  font-size:200%;
+  font-size: 200%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .buttondiv {
-  display:grid;
+  display: grid;
   align-content: center;
 }
 
 #cheesebutton:hover {
-  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🧀</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🧀</text></svg>") 16 0, auto;
+  /*!emojicursor.app*/
 }
 
 #pinebutton:hover {
-  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍍</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍍</text></svg>") 16 0, auto;
+  /*!emojicursor.app*/
 }
 
 #confirmbutton:hover {
-  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👀</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👀</text></svg>") 16 0, auto;
+  /*!emojicursor.app*/
 }
 
 #bananabutton:hover {
-  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>") 16 0, auto;
+  /*!emojicursor.app*/
 }
 
 #colorp {
-  padding:0px 5px;
+  padding: 0px 5px;
 
 }
