@@ -16,13 +16,10 @@ table {
 }
 
 body {
-  background: #70d6ff;
+  background: linear-gradient(rgb(196, 0, 141), #70d6ff);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: blue;
-  ;
-  margin-left: 10px;
-  max-width: 900px;
-  margin: auto;
+
 }
 
 footer {
@@ -35,17 +32,16 @@ footer {
   vertical-align: middle;
   display: flex;
   margin-top: 5rem;
-  margin-left: 10px;
-  padding-left: 10px;
-
 }
 
 .top {
-  background: linear-gradient(blue, #70d6ff);
   padding-left: 20px;
   border: 5px solid transparent;
   border-bottom: none;
   width: 100%;
+  max-width: 900px;
+  margin-left: 10px;
+  margin: auto;
 
 }
 
@@ -54,6 +50,10 @@ footer {
 main {
   padding-left: 20px;
   top: 100;
+  max-width: 900px;
+  margin-left: 10px;
+  margin: auto;
+
 }
 
 
@@ -106,13 +106,13 @@ h2 {
   height: auto;
   background-repeat: no-repeat;
   text-align: center;
-  min-height: 540px;
+  min-height: 560px;
   align-content: center;
   background-position: center;
 }
 
 
-#cheesebutton {
+.ingredientbutton {
   background: #ffc83d;
   color: black;
   background-position: center;
@@ -121,23 +121,18 @@ h2 {
   margin-bottom: 5px;
 }
 
-#pinebutton {
-  background: #ffc83d;
-  color: black;
+.ingredientbutton:hover {
+  background: black;
+  color: #ffc83d;
   background-position: center;
   font-size: 200%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin-bottom: 5px;
 }
 
-#bananabutton {
-  background: #ffc83d;
-  color: black;
-  background-position: center;
-  font-size: 200%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-bottom: 10px;
-}
+
+
+
 
 #confirmbutton {
   background: #ffc83d;

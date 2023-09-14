@@ -6,26 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="all" href="style.css">
     <script src="allthejs.js"></script>
-    <title>ugly css page!</title>
+    <title>Dream Pizza</title>
 </head>
 
 <body>
     <header class="top" id="headerid">
-        <h1>Hello</h1>
-        <a class="navlink" href="#headerid">Top</a><a class="navlink" href="#jsstuff">Pizza</a> | <a class="navlink"
-            href="#footerid">Footer</a> |
+        <h1>Make the perfect pizza!</h1>
+
     </header>
     <main>
         <section id="jsstuff">
-            <h2>Pizza Topping Tool</h2>
             <div class="buttondiv">
-                <button onclick="addCheese()" id="cheesebutton">
+                <button onclick="addCheese()" id="cheesebutton" class="ingredientbutton">
                     🧀 I NEED MORE CHEEEEESE! 🧀
                 </button>
-                <button onclick="addPineapple()" id="pinebutton">
+                <button onclick="addPineapple()" id="pinebutton" class=" ingredientbutton">
                     🍍 I NEED MORE PINEAPPLE! 🍍
                 </button>
-                <button id="bananabutton" onclick="confirmBanana()">🍌 I NEED MORE BANANA 🍌</button>
+                <button id="bananabutton" onclick="confirmBanana()" class="ingredientbutton">🍌 I NEED MORE BANANA
+                    🍌</button>
             </div>
             <div id="pizzaarea"></div>
     </main>

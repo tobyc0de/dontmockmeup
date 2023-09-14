@@ -2,17 +2,9 @@
 console.log("Hey");
 //declare function
 
+let numm1;
+let numm2;
 
-
-
-
-function askTime() {
-    let time = prompt("whats the hour");
-    console.log(time);
-}
-
-function showTime() {
-    let time = time;
-document.write(time);
-
-}
+function blub(3, 5) {
+    console.log(blibla)
+};
