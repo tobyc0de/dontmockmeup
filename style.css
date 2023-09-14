@@ -19,6 +19,7 @@ body {
   background: linear-gradient(rgb(196, 0, 141), #70d6ff);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: blue;
+  font-size: 20px;
 
 }
 
@@ -32,6 +33,7 @@ footer {
   vertical-align: middle;
   display: flex;
   margin-top: 5rem;
+
 }
 
 .top {
@@ -81,13 +83,13 @@ a:hover {
 
 h1 {
 
-  font-size: 3rem;
+  font-size: 5rem;
   color: #ffd80e;
 }
 
 h2 {
   text-shadow: #e9ff70 1px 0 10px;
-  color: #FF1493;
+  color: #ffd80e;
   font-size: 2rem;
 }
 

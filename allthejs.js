@@ -22,5 +22,17 @@ function myFunction() {
     } else {
         result = "You have selected Cancel! Well done :)";
     }
-    document.getElementById("conf").innerHTML = result;
-}  
+    document.getElementById("humancontent").innerHTML = result;
+}
+
+function userPrompt() {
+    let humanContent
+    let userReply = prompt("Are you a human? (yes/no)");
+    if (userReply == "yes") {
+        humanContent = "Phew, glad you are human!"
+    }
+    else {
+        humanContent = "Great, robots are cool!"
+    }
+    document.getElementById("humancontent").innerHTML = humanContent;
+}
