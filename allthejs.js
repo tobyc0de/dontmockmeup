@@ -11,13 +11,13 @@ function makeItLight() {
 function addCheese() {
     document.getElementById("pizzaarea")
         .innerHTML +=
-        "<h2>🧀🧀🧀🧀🧀🧀🧀</h2>";
+        "<h3>🧀🧀🧀🧀🧀🧀🧀</h3>";
 }
 
 function addPineapple() {
     document.getElementById("pizzaarea")
         .innerHTML +=
-        "<h2>💩💩💩💩💩💩</h2>";
+        "<h3>💩💩💩💩💩💩</h3>";
 }
 
 function confirmBanana() {
