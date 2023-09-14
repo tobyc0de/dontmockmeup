@@ -119,15 +119,12 @@ h2 {
   font-size: 200%;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin-bottom: 5px;
+  border-radius: 10px;
 }
 
 .ingredientbutton:hover {
   background: black;
   color: #ffc83d;
-  background-position: center;
-  font-size: 200%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-bottom: 5px;
 }
 
 
