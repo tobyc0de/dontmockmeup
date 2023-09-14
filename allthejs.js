@@ -15,17 +15,17 @@ function confirmBanana() {
 }
 
 function userPrompt() {
-    let humanContent;
+    let secretContent;
     let userReply = prompt("Wanna see it? (yes/no)");
     if (userReply == "yes") {
-        humanContent = "<img src='./bunny.png'>"
+        secretContent = "Tadaaaa!<br><img src='./bunny.png'>"
     } else if (userReply == "no") {
-        humanContent = "<img src='./hidden.png'>Alright then, I'll keep my secrets."
+        secretContent = "Alright then, I'll keep my secrets.<br/><img src='./hidden.png'>"
     }
     else {
-        humanContent = "<img src='./hidden.png'>Please answer yes or no"
+        secretContent = "Please answer yes or no<br><img src='./hidden.png'>"
     }
-    document.getElementById("humancontent").innerHTML = humanContent;
+    document.getElementById("secretcontent").innerHTML = secretContent;
     return userReply;
 }
 

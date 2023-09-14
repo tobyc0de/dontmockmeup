@@ -22,7 +22,6 @@ main {
 
 
 footer {
-  background: rgb(255, 151, 112);
   color: white;
   height: 400px;
   margin-top: 50px;
@@ -46,12 +45,9 @@ h2 {
   text-shadow: black 1px 1px 1px;
 }
 
-.imagemockup:hover {
-  border: 5px solid #ff70a6;
-}
 
 #pizzaarea {
-  background-image: url('./cheese.png');
+  background-image: url('./pizza.png');
   height: auto;
   background-repeat: no-repeat;
   text-align: center;
@@ -60,6 +56,9 @@ h2 {
   background-position: center;
 }
 
+#pizzaarea:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>😋</text></svg>") 16 0, auto;
+}
 
 .ingredientbutton {
   background: #ffc83d;
@@ -76,18 +75,6 @@ h2 {
   color: #ffc83d;
 }
 
-
-
-
-
-#confirmbutton {
-  background: #ffc83d;
-  color: black;
-  background-position: center;
-  font-size: 200%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
 .buttondiv {
   display: grid;
   align-content: center;
@@ -100,30 +87,23 @@ h2 {
 
 #pinebutton:hover {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍍</text></svg>") 16 0, auto;
-  /*!emojicursor.app*/
 }
 
 #confirmbutton:hover {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👀</text></svg>") 16 0, auto;
-  /*!emojicursor.app*/
 }
 
 #bananabutton:hover {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>") 16 0, auto;
-  /*!emojicursor.app*/
 }
 
 #promptbutton:hover {
-  cursor: url('./wand.png');
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👀</text></svg>") 16 0, auto;
 }
 
-#humancontent {
-  font-size: 120%;
+#secretcontent {
+  font-size: 150%;
   color: #ffd80e;
   font-weight: 300;
-}
-
-#colorp {
-  padding: 0px 5px;
-
+  text-align: center;
 }
