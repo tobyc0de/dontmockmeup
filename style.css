@@ -24,10 +24,17 @@ main {
 
 
 footer {
-  color: white;
-  height: 400px;
+  color: black;
+  height: 200px;
   margin-top: 50px;
+  background: #ffd80e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+
 }
+
 
 h1 {
   font-size: 5rem;
