@@ -16,7 +16,7 @@ function confirmBanana() {
 
 function userPrompt() {
     let secretContent;
-    let userReply = prompt("Wanna see it? (yes/no)");
+    let userReply = prompt("Do you really wanna see it?");
     if (userReply == "yes") {
         secretContent = "Tadaaaa!<br><img src='./bunny.png'>"
     } else if (userReply == "no") {
