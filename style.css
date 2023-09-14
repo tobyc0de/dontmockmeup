@@ -20,11 +20,13 @@ footer {
 .top,
 main {
   max-width: 900px;
+
 }
 
 #tobhead {
   height: 3rem;
 }
+
 
 
 footer {
@@ -37,7 +39,7 @@ footer {
   align-items: center;
   height: 200px;
   border-top: 10px dotted #ffd80e;
-  border-bottom: 10px dotted #ffd80e;
+
 
 }
 
@@ -52,6 +54,9 @@ h2 {
   color: #ffd80e;
   font-size: 3rem;
   font-weight: 400;
+  border-top: 10px dotted #ffd80e;
+  padding-top: 20px;
+
 }
 
 h1,
@@ -137,4 +142,8 @@ h2 {
 
 #secretcontent>img {
   height: 300px;
+}
+
+#secretcontent:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👌</text></svg>") 16 0, auto;
 }
