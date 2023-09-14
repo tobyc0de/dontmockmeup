@@ -1,3 +1,13 @@
+function makeItDark() {
+    document.body.style.background = "linear-gradient(darkred, darkblue)";
+}
+
+function makeItLight() {
+    document.body.style.background = "linear-gradient(#ffa9e7, #c5f6ff)";
+}
+
+
+
 function addCheese() {
     document.getElementById("pizzaarea")
         .innerHTML +=
