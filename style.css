@@ -1,88 +1,34 @@
-.halfwide {
-  max-width: 48%;
-  max-height: 250px;
-  float: left;
-  padding: 15px;
-}
-
-.images,
-.table,
-h2 {
-  clear: both;
-}
-
-table {
-  border: 1px solid #e9ff70;
-}
-
 body {
   background: linear-gradient(rgb(196, 0, 141), #70d6ff);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: blue;
   font-size: 20px;
-
 }
+
+.top,
+main,
+footer {
+  padding-left: 20px;
+  border: 5px solid transparent;
+  border-bottom: none;
+  margin-left: 10px;
+  margin: auto;
+}
+
+.top,
+main {
+  max-width: 900px;
+}
+
 
 footer {
   background: rgb(255, 151, 112);
   color: white;
   height: 400px;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  vertical-align: middle;
-  display: flex;
-  margin-top: 5rem;
-
-}
-
-.top {
-  padding-left: 20px;
-  border: 5px solid transparent;
-  border-bottom: none;
-  width: 100%;
-  max-width: 900px;
-  margin-left: 10px;
-  margin: auto;
-
-}
-
-
-
-main {
-  padding-left: 20px;
-  top: 100;
-  max-width: 900px;
-  margin-left: 10px;
-  margin: auto;
-
-}
-
-
-.navlink {
-  text-decoration: none;
-  border: 1px solid #70d6ff;
-  background: #70d6ff;
-  border-radius: 10px;
-  padding: 5px 10px;
-  text-shadow: black 1px 1px 1px;
-
-}
-
-a {
-  text-decoration: none;
-  color: #ffd80e;
-  text-shadow: black 1px 1px 1px;
-}
-
-a:hover {
-  text-decoration: underline;
-  border: 5px solid #ff70a6;
-  color: #ff70a6;
+  margin-top: 50px;
 }
 
 h1 {
-
   font-size: 5rem;
   color: #ffd80e;
 }
@@ -91,6 +37,7 @@ h2 {
   text-shadow: #e9ff70 1px 0 10px;
   color: #ffd80e;
   font-size: 2rem;
+  font-weight: 400;
 }
 
 h1,
@@ -164,6 +111,12 @@ h2 {
 #bananabutton:hover {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>") 16 0, auto;
   /*!emojicursor.app*/
+}
+
+#humancontent {
+  font-size: 120%;
+  color: #ffd80e;
+  font-weight: 300;
 }
 
 #colorp {

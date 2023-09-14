@@ -14,25 +14,21 @@ function confirmBanana() {
     confirm("Just ... no.");
 }
 
-function myFunction() {
-    var result;
-    var r = confirm("Whatcha wann do?!");
-    if (r == true) {
-        result = "You have selected OK! Great job :)";
-    } else {
-        result = "You have selected Cancel! Well done :)";
-    }
-    document.getElementById("humancontent").innerHTML = result;
-}
+
 
 function userPrompt() {
-    let humanContent
-    let userReply = prompt("Are you a human? (yes/no)");
+    let humanContent;
+    let userReply = prompt("Wanna see it? (yes/no)");
     if (userReply == "yes") {
-        humanContent = "Phew, glad you are human!"
+        humanContent = "<img src='./bunny.png'>"
+    } else if (userReply == "no") {
+        humanContent = "<img src='./hidden.png'>Alright then, I'll keep my secrets."
     }
     else {
-        humanContent = "Great, robots are cool!"
+        humanContent = "<img src='./hidden.png'>Please answer yes or no"
     }
     document.getElementById("humancontent").innerHTML = humanContent;
+    return userReply;
 }
+
+let userReply;
