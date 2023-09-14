@@ -14,8 +14,6 @@ function confirmBanana() {
     confirm("Just ... no.");
 }
 
-
-
 function userPrompt() {
     let humanContent;
     let userReply = prompt("Wanna see it? (yes/no)");
@@ -31,4 +29,4 @@ function userPrompt() {
     return userReply;
 }
 
-let userReply;
+

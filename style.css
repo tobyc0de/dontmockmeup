@@ -113,6 +113,10 @@ h2 {
   /*!emojicursor.app*/
 }
 
+#promptbutton:hover {
+  cursor: url('./wand.png');
+}
+
 #humancontent {
   font-size: 120%;
   color: #ffd80e;
