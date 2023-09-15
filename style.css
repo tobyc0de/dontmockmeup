@@ -77,16 +77,45 @@ h2 {
 
 #pizzaarea {
   background-image: url('./media/pizza.png');
-  height: auto;
   background-repeat: no-repeat;
   text-align: center;
   min-height: 575px;
   align-content: center;
   background-position: center;
+  height: 200px;
+  position: relative;
+  z-index: -1;
+
 }
 
 #pizzaarea:hover {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>😋</text></svg>") 16 0, auto;
+}
+
+
+.rotatepizza {
+  -webkit-animation: spin 30s linear infinite;
+  -moz-animation: spin 30s linear infinite;
+  animation: spin 30s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 
