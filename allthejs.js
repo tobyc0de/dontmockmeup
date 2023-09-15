@@ -42,3 +42,13 @@ function userPrompt() {
 for (let counter = 0; counter < 5; counter = counter + 1) {
     console.log("bla" + counter);
 }
+
+
+
+function getrating() {
+    let rating = prompt("rate me 1-10");
+
+    for (let i = 0; i < rating; i++) {
+        document.getElementById("thumbcontent").insertAdjacentHTML("afterend", "<img class='thumbs' src='./media/thumbs.gif' />");
+    }
+}
