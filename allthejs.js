@@ -9,15 +9,15 @@ function makeItLight() {
 
 
 function addCheese() {
-    document.getElementById("pizzaarea")
+    document.getElementById("texttopping")
         .innerHTML +=
-        "<h3>🧀🧀🧀🧀🧀🧀🧀</h3>";
+        "🧀";
 }
 
 function addPineapple() {
-    document.getElementById("pizzaarea")
+    document.getElementById("texttopping")
         .innerHTML +=
-        "<h3>💩💩💩💩💩💩</h3>";
+        "💩";
 }
 
 function confirmBanana() {
@@ -46,7 +46,7 @@ for (let counter = 0; counter < 5; counter = counter + 1) {
 
 
 function getrating() {
-    let rating = prompt("rate me 1-10");
+    let rating = prompt("rate me 1-10", 5);
 
     for (let i = 0; i < rating; i++) {
         document.getElementById("thumbcontent").insertAdjacentHTML("afterend", "<img class='thumbs' src='./media/thumbs.gif' />");

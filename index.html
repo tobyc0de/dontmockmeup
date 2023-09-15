@@ -40,7 +40,19 @@
                 <button id="bananabutton" onclick="confirmBanana()" class="ingredientbutton">🍌 I need more banana!
                     🍌</button>
             </div>
-            <div id="pizzaarea"></div>
+            <div id="pizzaarea"><svg viewBox="0 0 100 85" width="500" height="500">
+                    <defs>
+                        <path id="circle" d="
+                  M 50, 50
+                  m -37, 0
+                  a 37,37 0 1,1 74,0
+                  a 37,37 0 1,1 -74,0" />
+                    </defs>
+                    <text font-size="10">
+                        <textPath xlink:href="#circle" id="texttopping">
+                        </textPath>
+                    </text>
+                </svg></div>
             <!-- MAGIC TRICK -->
             <h2>Magic trick</h2>
             <div class="buttondiv">

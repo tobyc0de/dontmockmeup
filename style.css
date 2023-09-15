@@ -93,7 +93,7 @@ h2 {
 
 
 .ingredientbutton {
-  background: #ffc83d;
+  background: #ffd80e;
   color: black;
   background-position: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -104,7 +104,7 @@ h2 {
 
 .ingredientbutton:hover {
   background: black;
-  color: #ffc83d;
+  color: #ffd80e;
 }
 
 .buttondiv {
@@ -163,7 +163,8 @@ h2 {
 }
 
 .thumbs {
-  max-height: 50px;
+  max-height: 100px;
   border: 6px solid #ffd80e;
   border-radius: 50%;
+  margin: 10px;
 }
