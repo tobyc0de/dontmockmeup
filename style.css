@@ -134,6 +134,12 @@ h2 {
   padding: 10px;
 }
 
+.threebuttongrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
 .sevenbuttongrid {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto;

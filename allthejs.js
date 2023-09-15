@@ -71,11 +71,21 @@ for (let counter = 0; counter < 5; counter = counter + 1) {
 
 
 
-function getrating() {
-    let rating = prompt("rate me 1-10");
+function getRatingWhile() {
+    let rating = prompt("rate me 1-10 WHILE I wait");
 
     while (rating > 0) {
         document.getElementById("thumbcontent").insertAdjacentHTML("afterend", "<img class='thumbs' src='./media/thumbs.gif' />");
         rating--
     }
 }
+
+function getRatingFor() {
+    let rating = prompt("rate me 1-10 FOR fun");
+    for (let index = 0; index < rating; index++) {
+        document.getElementById("thumbcontent")
+            .innerHTML +=
+            "<img class='thumbs' src='./media/thumbs.gif' />";
+    }
+}
+
