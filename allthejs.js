@@ -3,7 +3,7 @@ function makeItDark() {
 }
 
 function makeItLight() {
-    document.body.style.background = "linear-gradient(#ffa9e7, #c5f6ff)";
+    document.body.style.background = "linear-gradient(rgb(196, 0, 141), #70d6ff)";
 }
 
 
@@ -48,7 +48,7 @@ function resetToppings() {
         "";
 }
 
-function userPrompt() {
+function magicShow() {
     let secretContent;
     let userReply = prompt("Do you really wanna see it?");
     if (userReply == "yes") {
