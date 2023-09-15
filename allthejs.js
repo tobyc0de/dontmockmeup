@@ -42,6 +42,12 @@ function confirmBanana() {
     confirm("Just ... no.");
 }
 
+function resetToppings() {
+    document.getElementById("texttopping")
+        .innerHTML =
+        "";
+}
+
 function userPrompt() {
     let secretContent;
     let userReply = prompt("Do you really wanna see it?");
