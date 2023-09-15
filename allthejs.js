@@ -63,10 +63,13 @@ for (let counter = 0; counter < 5; counter = counter + 1) {
 
 
 
-function getrating() {
-    let rating = prompt("rate me 1-10", 5);
 
-    for (let i = 0; i < rating; i++) {
+
+function getrating() {
+    let rating = prompt("rate me 1-10");
+
+    while (rating > 0) {
         document.getElementById("thumbcontent").insertAdjacentHTML("afterend", "<img class='thumbs' src='./media/thumbs.gif' />");
+        rating--
     }
 }
