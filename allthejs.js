@@ -28,15 +28,17 @@ function userPrompt() {
     let secretContent;
     let userReply = prompt("Do you really wanna see it?");
     if (userReply == "yes") {
-        secretContent = "Tadaaaa!<br><img src='./bunny.png'>"
+        secretContent = "Tadaaaa!<br><img src='./media/bunny.png'>"
     } else if (userReply == "no") {
-        secretContent = "Alright then, I'll keep my secrets.<br/><img src='./hidden.png'>"
+        secretContent = "Alright then, I'll keep my secrets.<br/><img src='./media/hidden.png'>"
     }
     else {
-        secretContent = "Please answer yes or no<br><img src='./hidden.png'>"
+        secretContent = "Please answer yes or no<br><img src='./media/hidden.png'>"
     }
     document.getElementById("secretcontent").innerHTML = secretContent;
     return userReply;
 }
 
-
+for (let counter = 0; counter < 5; counter = counter + 1) {
+    console.log("bla" + counter);
+}
