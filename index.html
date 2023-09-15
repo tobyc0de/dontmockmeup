@@ -19,79 +19,75 @@
     </header>
     <!-- MAIN -->
     <main>
-        <section id="jsstuff">
-            <!-- BRIGHTNESS -->
-            <h2>Is this too bright for you?</h2>
-            <div class="buttondiv twobuttongrid">
+        <!-- FEEDBACK -->
+        <h2>Give me feedback please!</h2>
+        <div class=" buttondiv twobuttongrid">
+            <button id="thumbsbutton" onclick="getRatingFor()" class="yellowbutton">👍 Rate me <u>for</u> fun!
+                👍</button>
+            <button id="thumbsbutton" onclick="getRatingWhile()" class="yellowbutton">👍 Rate me <u>while</u> I
+                wait!
+                👍</button>
 
-                <button onclick="makeItDark()" class="blackbutton" id="darkbutton">🌙 Make it dark! 🌙</button>
-                <button onclick="makeItLight()" class="yellowbutton" id="lightbutton">☀️ Make it light! ☀️</button>
-            </div>
-            <!-- PIZZA -->
-            <h2>Create your perfect pizza!</h2>
+        </div>
 
-            <div class="buttondiv sevenbuttongrid">
-                <button onclick="addCheese()" id="cheesebutton" class="yellowbutton">
-                    🧀
-                </button>
-                <button onclick="addPineapple()" id="pinebutton" class=" yellowbutton">
-                    🍍
-                </button>
-                <button onclick="addGarlic()" id="garlicbutton" class=" yellowbutton">
-                    🧄
-                </button>
-                <button id="bananabutton" onclick="confirmBanana()" class="yellowbutton">
-                    🍌</button>
-                <button onclick="addPeppers()" id="pepperbutton" class="yellowbutton">
-                    🌶️
-                </button>
-                <button onclick="addBroc()" id="brocbutton" class="yellowbutton">
-                    🥦
-                </button>
-                <button onclick="resetToppings()" id="resetbutton" class="yellowbutton">
-                    Reset
-                </button>
-            </div>
-            <div id="pizzaarea"><svg viewBox="0 0 100 85" width="500" height="500">
-                    <defs>
-                        <path id="circle" d="
+        <div id="thumbcontent"></div>
+        <!-- BRIGHTNESS -->
+        <h2>Is this too bright for you?</h2>
+        <div class="buttondiv twobuttongrid">
+
+            <button onclick="makeItDark()" class="blackbutton" id="darkbutton">🌙 Make it dark! 🌙</button>
+            <button onclick="makeItLight()" class="yellowbutton" id="lightbutton">☀️ Make it light! ☀️</button>
+        </div>
+        <!-- PIZZA -->
+        <h2>Create your perfect pizza!</h2>
+
+        <div class="buttondiv sevenbuttongrid">
+            <button onclick="addCheese()" id="cheesebutton" class="yellowbutton">
+                🧀
+            </button>
+            <button onclick="addPineapple()" id="pinebutton" class=" yellowbutton">
+                🍍
+            </button>
+            <button onclick="addGarlic()" id="garlicbutton" class=" yellowbutton">
+                🧄
+            </button>
+            <button id="bananabutton" onclick="confirmBanana()" class="yellowbutton">
+                🍌</button>
+            <button onclick="addPeppers()" id="pepperbutton" class="yellowbutton">
+                🌶️
+            </button>
+            <button onclick="addBroc()" id="brocbutton" class="yellowbutton">
+                🥦
+            </button>
+            <button onclick="resetToppings()" id="resetbutton" class="yellowbutton">
+                Reset
+            </button>
+        </div>
+        <div id="pizzaarea"><svg viewBox="0 0 100 85" width="500" height="500">
+                <defs>
+                    <path id="circle" d="
                   M 50, 50
                   m -37, 0
                   a 37,37 0 1,1 74,0
                   a 37,37 0 1,1 -74,0" />
-                    </defs>
-                    <text font-size="7">
-                        <textPath xlink:href="#circle" id="texttopping">
-                        </textPath>
-                    </text>
-                </svg></div>
-            <!-- MAGIC TRICK -->
-            <h2>Magic trick</h2>
-            <div class="buttondiv">
-                <button id="promptbutton" onclick="userPrompt()" class="yellowbutton">👀 Reveal the secret
-                    👀</button>
+                </defs>
+                <text font-size="7">
+                    <textPath xlink:href="#circle" id="texttopping">
+                    </textPath>
+                </text>
+            </svg></div>
+        <!-- MAGIC TRICK -->
+        <h2>Magic trick</h2>
+        <div class="buttondiv">
+            <button id="promptbutton" onclick="userPrompt()" class="yellowbutton">👀 Reveal the secret
+                👀</button>
+        </div>
+        <div id="secretcontent" onclick="userPrompt()"><img id=" secret" src="./media/hidden.png" "><br>
             </div>
-            <div id="secretcontent" onclick="userPrompt()"><img id=" secret" src="./media/hidden.png" "><br>
-            </div>
-<!-- FEEDBACK -->            
-<h2>Give me feedback please!</h2>
-            <div class=" buttondiv twobuttongrid">
-                <button id="thumbsbutton" onclick="getRatingFor()" class="yellowbutton">👍 Rate me 1-10 <u>for</u> fun!
-                    👍</button>
-                <button id="thumbsbutton" onclick="getRatingWhile()" class="yellowbutton">👍 Rate me 1-10 <u>while</u> I
-                    wait!
-                    👍</button>
-
-            </div>
-
-            <div id="thumbcontent"></div>
-
-
-        </section>
     </main>
     <!-- FOOTER -->
     <footer id=" footerid"><span>no copyright 😎</span>
-    </footer>
+            </footer>
 </body>
 
 </html>

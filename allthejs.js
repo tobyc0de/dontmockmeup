@@ -1,5 +1,7 @@
 function makeItDark() {
-    document.body.style.background = "linear-gradient(darkred, darkblue)";
+    document.body.style.background = "linear-gradient(darkred, darkblue)"
+    document.getElement.style.border = "10px dotted #blue"
+
 }
 
 function makeItLight() {
@@ -75,17 +77,20 @@ function getRatingWhile() {
     let rating = prompt("rate me 1-10 WHILE I wait");
 
     while (rating > 0) {
-        document.getElementById("thumbcontent").insertAdjacentHTML("afterend", "<img class='thumbs' src='./media/thumbs.gif' />");
+        document.getElementById("thumbcontent").insertAdjacentHTML("afterend", "<img class='thumbs' src='./media/thumbs.gif' />" + rating);
         rating--
     }
 }
 
 function getRatingFor() {
     let rating = prompt("rate me 1-10 FOR fun");
-    for (let index = 0; index < rating; index++) {
-        document.getElementById("thumbcontent")
-            .innerHTML +=
-            "<img class='thumbs' src='./media/thumbs.gif' />";
-    }
+    if (!(rating > 0 && rating <= 10)) {
+        getRatingFor()
+    } else
+        for (let index = 0; index < rating; index++) {
+            document.getElementById("thumbcontent")
+                .innerHTML +=
+                "<img class='thumbs' src='./media/thumbs.gif' />" + (index + 1);
+        }
 }
 
