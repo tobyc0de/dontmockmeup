@@ -14,6 +14,24 @@ function addCheese() {
         "🧀";
 }
 
+function addPeppers() {
+    document.getElementById("texttopping")
+        .innerHTML +=
+        "🌶️";
+}
+
+function addBroc() {
+    document.getElementById("texttopping")
+        .innerHTML +=
+        "🥦";
+}
+
+function addGarlic() {
+    document.getElementById("texttopping")
+        .innerHTML +=
+        "🧄";
+}
+
 function addPineapple() {
     document.getElementById("texttopping")
         .innerHTML +=

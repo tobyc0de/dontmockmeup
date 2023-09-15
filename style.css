@@ -91,18 +91,34 @@ h2 {
 }
 
 
-
-.ingredientbutton {
-  background: #ffd80e;
-  color: black;
+.blackbutton {
+  background: black;
+  color: #ffd80e;
   background-position: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin-bottom: 5px;
+  margin: 15px;
   border-radius: 10px;
   font-size: 30px;
 }
 
-.ingredientbutton:hover {
+.blackbutton:hover {
+  background: #ffd80e;
+  color: black;
+}
+
+
+
+.yellowbutton {
+  background: #ffd80e;
+  color: black;
+  background-position: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 15px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.yellowbutton:hover {
   background: black;
   color: #ffd80e;
 }
@@ -112,8 +128,37 @@ h2 {
   align-content: center;
 }
 
+.twobuttongrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.sixbuttongrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 10px;
+}
+
+
+
 #cheesebutton:hover {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🧀</text></svg>") 16 0, auto;
+  /*!emojicursor.app*/
+}
+
+#garlicbutton:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🧄</text></svg>") 16 0, auto;
+  /*!emojicursor.app*/
+}
+
+#brocbutton:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🥦</text></svg>") 16 0, auto;
+  /*!emojicursor.app*/
+}
+
+#pepperbutton:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌶️</text></svg>") 16 0, auto;
   /*!emojicursor.app*/
 }
 

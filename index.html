@@ -22,23 +22,32 @@
         <section id="jsstuff">
             <!-- BRIGHTNESS -->
             <h2>Is this too bright for you?</h2>
-            <div class="buttondiv">
+            <div class="buttondiv twobuttongrid">
 
-                <button onclick="makeItDark()" class="ingredientbutton" id="darkbutton">🌙 Make it dark! 🌙</button>
-                <button onclick="makeItLight()" class="ingredientbutton" id="lightbutton">☀️ Make it light! ☀️</button>
+                <button onclick="makeItDark()" class="blackbutton" id="darkbutton">🌙 Make it dark! 🌙</button>
+                <button onclick="makeItLight()" class="yellowbutton" id="lightbutton">☀️ Make it light! ☀️</button>
             </div>
             <!-- PIZZA -->
             <h2>Create your perfect pizza!</h2>
 
-            <div class="buttondiv">
-                <button onclick="addCheese()" id="cheesebutton" class="ingredientbutton">
-                    🧀 I need more cheese! 🧀
+            <div class="buttondiv sixbuttongrid">
+                <button onclick="addCheese()" id="cheesebutton" class="yellowbutton">
+                    🧀
                 </button>
-                <button onclick="addPineapple()" id="pinebutton" class=" ingredientbutton">
-                    🍍 I need more pineapple! 🍍
+                <button onclick="addPineapple()" id="pinebutton" class=" yellowbutton">
+                    🍍
                 </button>
-                <button id="bananabutton" onclick="confirmBanana()" class="ingredientbutton">🍌 I need more banana!
+                <button onclick="addGarlic()" id="garlicbutton" class=" yellowbutton">
+                    🧄
+                </button>
+                <button id="bananabutton" onclick="confirmBanana()" class="yellowbutton">
                     🍌</button>
+                <button onclick="addPeppers()" id="pepperbutton" class="yellowbutton">
+                    🌶️
+                </button>
+                <button onclick="addBroc()" id="brocbutton" class="yellowbutton">
+                    🥦
+                </button>
             </div>
             <div id="pizzaarea"><svg viewBox="0 0 100 85" width="500" height="500">
                     <defs>
@@ -56,7 +65,7 @@
             <!-- MAGIC TRICK -->
             <h2>Magic trick</h2>
             <div class="buttondiv">
-                <button id="promptbutton" onclick="userPrompt()" class="ingredientbutton">👀 Reveal the secret
+                <button id="promptbutton" onclick="userPrompt()" class="yellowbutton">👀 Reveal the secret
                     👀</button>
             </div>
             <div id="secretcontent" onclick="userPrompt()"><img id=" secret" src="./media/hidden.png" "><br>
@@ -64,7 +73,7 @@
 <!-- FEEDBACK -->            
 <h2>Give me feedback please!</h2>
             <div class=" buttondiv">
-                <button id="thumbsbutton" onclick="getrating()" class="ingredientbutton">👍 Rate me! 👍</button>
+                <button id="thumbsbutton" onclick="getrating()" class="yellowbutton">👍 Rate me! 👍</button>
             </div>
             <div id="thumbcontent">
             </div>
