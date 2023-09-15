@@ -1,7 +1,5 @@
 function makeItDark() {
-    document.body.style.background = "linear-gradient(darkred, darkblue)"
-    document.getElement.style.border = "10px dotted #blue"
-
+    document.body.style.background = "linear-gradient(darkred, darkblue)";
 }
 
 function makeItLight() {

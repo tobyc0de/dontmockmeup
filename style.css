@@ -4,7 +4,7 @@ body {
   color: #ffd80e;
   font-size: 30px;
   text-align: center;
-
+  width: 1200px;
 }
 
 .top,
@@ -132,6 +132,28 @@ h2 {
   display: grid;
   grid-template-columns: auto auto;
   padding: 10px;
+}
+
+.modebuttongrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  max-width: 105px;
+}
+
+.modebutton {
+  border: 1px solid white;
+  border-radius: 15px;
+  max-width: 50px;
+
+}
+
+#darkbutton {
+  background: darkblue;
+}
+
+#lightbutton {
+  background: #c5f6ff;
 }
 
 .threebuttongrid {
