@@ -85,23 +85,21 @@ for (let counter = 0; counter < 5; counter = counter + 1) {
 
 
 
-
-
 function getRatingWhile() {
-    let rating = prompt("rate me 1-10 WHILE I wait");
+    let ratingWhile = prompt("rate me 1-10 WHILE I wait");
 
-    while (rating > 0) {
-        document.getElementById("thumbcontent").insertAdjacentHTML("afterend", "<img class='thumbs' src='./media/thumbs.gif' />" + rating);
-        rating--
+    while (ratingWhile >= 1 && ratingWhile <= 10) {
+        document.getElementById("thumbcontent").insertAdjacentHTML("afterend", "<img class='thumbs' src='./media/thumbs.gif' />" + ratingWhile);
+        ratingWhile--
     }
 }
 
 function getRatingFor() {
-    let rating = prompt("rate me 1-10 FOR fun");
-    if (!(rating > 0 && rating <= 10)) {
+    let ratingFor = prompt("rate me 1-10 FOR fun");
+    if (!(ratingFor > 0 && ratingFor <= 10)) {
         getRatingFor()
     } else
-        for (let index = 0; index < rating; index++) {
+        for (let index = 0; index < ratingFor; index++) {
             document.getElementById("thumbcontent")
                 .innerHTML +=
                 "<img class='thumbs' src='./media/thumbs.gif' />" + (index + 1);
