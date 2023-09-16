@@ -36,8 +36,7 @@ main {
 footer {
   color: black;
   height: 200px;
-  margin-top: 50px;
-  background: #70d6ff;
+  margin-top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +58,9 @@ h2 {
   font-size: 3rem;
   font-weight: 400;
   border-top: 10px dotted #ffd80e;
-  padding-top: 50px;
+  padding-top: 150px;
+  margin-top: 150px;
+
 }
 
 h3 {
@@ -182,12 +183,12 @@ h2 {
 }
 
 #darkbutton {
-  background: darkblue;
+  background: linear-gradient(0.4turn, darkred, darkblue);
   margin-right: 5px;
 }
 
 #lightbutton {
-  background: #c5f6ff;
+  background: linear-gradient(0.4turn, rgb(196, 0, 141), #70d6ff);
   display: inherit;
   display: none;
 }
