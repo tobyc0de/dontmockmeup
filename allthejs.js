@@ -1,10 +1,26 @@
+let lightmode = "light";
+console.log(lightmode);
+
 function makeItDark() {
-    document.body.style.background = "linear-gradient(darkred, darkblue)";
+    document.body.style.background = "linear-gradient(0.4turn, darkred, darkblue)";
+    lightmode = "dark"
+    console.log(lightmode);
+    document.getElementById("darkbutton").style.display = "none";
+    document.getElementById("lightbutton").style.display = "flex";
+
 }
 
 function makeItLight() {
-    document.body.style.background = "linear-gradient(rgb(196, 0, 141), #70d6ff)";
+    document.body.style.background = "linear-gradient(0.4turn, rgb(196, 0, 141), #70d6ff)";
+    lightmode = "light"
+    console.log(lightmode);
+    document.getElementById("lightbutton").style.display = "none";
+    document.getElementById("darkbutton").style.display = "flex";
+
 }
+
+
+
 
 
 

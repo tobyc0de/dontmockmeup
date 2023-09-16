@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(rgb(196, 0, 141), #70d6ff);
+  background: linear-gradient(0.4turn, rgb(196, 0, 141), #70d6ff);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #ffd80e;
   font-size: 30px;
@@ -168,22 +168,28 @@ h2 {
   display: grid;
   grid-template-columns: auto auto;
   padding: 10px;
-  max-width: 105px;
+  max-width: 150px;
+  position: fixed;
 }
 
 .modebutton {
-  border: 1px solid white;
+  border: 2px solid #ffd80e;
   border-radius: 15px;
   max-width: 50px;
-
+  padding: 5px 20px;
+  display: grid;
+  justify-content: center;
 }
 
 #darkbutton {
   background: darkblue;
+  margin-right: 5px;
 }
 
 #lightbutton {
   background: #c5f6ff;
+  display: inherit;
+  display: none;
 }
 
 .threebuttongrid {
