@@ -107,4 +107,3 @@ function getRatingFor() {
                 "<img class='thumbs' src='./media/thumbs.gif' />" + (index + 1);
         }
 }
-
