@@ -1,6 +1,6 @@
 body {
   background: linear-gradient(0.4turn, rgb(196, 0, 141), #70d6ff);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #ffd80e;
   font-size: 30px;
   text-align: center;
@@ -19,7 +19,6 @@ footer {
 .top,
 main {
   max-width: 900px;
-
 }
 
 #tobhead {
@@ -31,8 +30,6 @@ main {
   text-shadow: 0px 0px 10px #ffd80e;
 }
 
-
-
 footer {
   color: #ffd80e;
   height: 200px;
@@ -42,10 +39,7 @@ footer {
   align-items: center;
   height: 200px;
   border-top: 10px dotted #ffd80e;
-
-
 }
-
 
 h1 {
   font-size: 5rem;
@@ -60,24 +54,39 @@ h2 {
   border-top: 10px dotted #ffd80e;
   padding-top: 100px;
   margin-top: 100px;
-
 }
 
 h3 {
   color: #ffd80e;
   font-size: 2rem;
-  font-weight: 400
+  font-weight: 400;
 }
 
 h1,
 h2 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-shadow: black 1px 1px 1px;
 }
 
+#outfit {
+  display: grid;
+  grid-template-columns: auto 458px auto;
+  height: 600px;
+}
+
+#mirror {
+  background-image: url(./media/mirror.png);
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: auto 100px auto;
+}
+
+#head {
+  padding-top: 10px;
+}
 
 #pizzaarea {
-  background-image: url('./media/pizza.png');
+  background-image: url("./media/pizza.png");
   background-repeat: no-repeat;
   text-align: center;
   min-height: 575px;
@@ -87,14 +96,13 @@ h2 {
   position: relative;
   z-index: -1;
   min-width: 575px;
-
-
 }
 
 #pizzaarea:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>😋</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>😋</text></svg>")
+      16 0,
+    auto;
 }
-
 
 .rotatepizza {
   -webkit-animation: spin 30s linear infinite;
@@ -121,12 +129,11 @@ h2 {
   }
 }
 
-
 .blackbutton {
   background: black;
   color: #ffd80e;
   background-position: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin: 15px;
   border-radius: 10px;
   font-size: 30px;
@@ -137,13 +144,11 @@ h2 {
   color: black;
 }
 
-
-
 .yellowbutton {
   background: #ffd80e;
   color: black;
   background-position: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin: 15px;
   border-radius: 10px;
   font-size: 30px;
@@ -205,55 +210,72 @@ h2 {
   padding: 10px;
 }
 
-
-
 #cheesebutton:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🧀</text></svg>") 16 0, auto;
-  /*!emojicursor.app*/
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🧀</text></svg>")
+      16 0,
+    auto;
 }
 
 #garlicbutton:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🧄</text></svg>") 16 0, auto;
-  /*!emojicursor.app*/
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🧄</text></svg>")
+      16 0,
+    auto;
 }
 
 #brocbutton:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🥦</text></svg>") 16 0, auto;
-  /*!emojicursor.app*/
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🥦</text></svg>")
+      16 0,
+    auto;
 }
 
 #pepperbutton:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌶️</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌶️</text></svg>")
+      16 0,
+    auto;
 }
 
 #pinebutton:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍍</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍍</text></svg>")
+      16 0,
+    auto;
 }
 
 #confirmbutton:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👀</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👀</text></svg>")
+      16 0,
+    auto;
 }
 
 #bananabutton:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🍌</text></svg>")
+      16 0,
+    auto;
 }
 
-#promptbutton:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👀</text></svg>") 16 0, auto;
+#promptbutton:hover,
+#mirrorbutton:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👀</text></svg>")
+      16 0,
+    auto;
 }
 
 #lightbutton:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>☀️</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>☀️</text></svg>")
+      16 0,
+    auto;
 }
 
 #darkbutton:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌙</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🌙</text></svg>")
+      16 0,
+    auto;
 }
 
 #thumbsbutton:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👍</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👍</text></svg>")
+      16 0,
+    auto;
 }
-
 
 #secretcontent {
   font-size: 30px;
@@ -263,12 +285,14 @@ h2 {
   height: 380px;
 }
 
-#secretcontent>img {
+#secretcontent > img {
   height: 300px;
 }
 
 #secretcontent:hover {
-  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👌</text></svg>") 16 0, auto;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👌</text></svg>")
+      16 0,
+    auto;
 }
 
 .thumbs {
