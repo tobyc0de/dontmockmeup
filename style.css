@@ -198,6 +198,27 @@ h2 {
   display: none;
 }
 
+#navi {
+  color: #ffd80e;
+  font-size: 1rem;
+}
+.naviitem {
+  text-decoration: none;
+  color: #ffd80e;
+  padding: 5px 10px;
+  font-family: Impact, Haettenschweiler, sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+}
+
+.naviitemactive {
+  text-decoration: none;
+  color: #ffd80e;
+  padding: 5px 10px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+}
+
 .threebuttongrid {
   display: grid;
   grid-template-columns: auto auto auto;
