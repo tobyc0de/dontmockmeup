@@ -11,7 +11,11 @@ function addClothing() {
   document.querySelector("#currentoutfit").innerHTML = clothesItems;
 
   console.log(clothesItems);
-  let addedItem = prompt("What do you want to add to your outfit?");
+  let addedItem = prompt(
+    "You are currently wearing " +
+      clothesItems +
+      ". What do you want to add to your outfit? "
+  );
   clothesItems.push(addedItem);
   console.log(clothesItems);
   numberOfItemsLeft = clothesItems.length;
