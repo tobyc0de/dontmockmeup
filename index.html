@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" media="all" href="style.css" />
     <script src="allthejs.js"></script>
+    <script src="strippoker.js"></script>
     <title>Toby's Coding Playground</title>
   </head>
 
@@ -32,16 +33,39 @@
     </header>
     <!-- MAIN -->
     <main>
+      <!-- STRIP POKER -->
+      <h2>Strip Poker (without the poker)</h2>
+      <p>testing arrays and stuff</p>
+      <p>You are currently wearing: <span id="currentoutfit"></span></p>
+      <div class="buttondiv twobuttongrid">
+        <button
+          id="removeclothingbutton"
+          onClick="removeClothing()"
+          class="yellowbutton"
+        >
+          Remove some clothing
+        </button>
+        <button
+          id="addclothingbutton"
+          onClick="addClothing()"
+          class="yellowbutton"
+        >
+          Add some clothing
+        </button>
+      </div>
       <!-- OUTFIT -->
       <h2>Free style consultation</h2>
       <p>playing with grids and transparent images</p>
-      <button
-        onclick="lookInTheMirror()"
-        class="yellowbutton"
-        id="mirrorbutton"
-      >
-        Look in the mirror!
-      </button>
+      <div class="buttondiv">
+        <button
+          onclick="lookInTheMirror()"
+          class="yellowbutton"
+          id="mirrorbutton"
+        >
+          Look in the mirror!
+        </button>
+      </div>
+
       <br />
       <div id="outfit">
         <div></div>
