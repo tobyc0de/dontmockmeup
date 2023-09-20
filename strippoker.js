@@ -15,7 +15,8 @@ function addClothing() {
   clothesItems.push(addedItem);
   console.log(clothesItems);
   numberOfItemsLeft = clothesItems.length;
-  document.querySelector("#currentoutfit").innerHTML = clothesItems;
+  document.querySelector("#currentoutfit").innerHTML =
+    "You are currently wearing: " + clothesItems;
 }
 
 function removeClothing() {
@@ -36,7 +37,8 @@ function removeClothing() {
         numberOfItemssLeft--;
         indexOfSelected = clothesItems.indexOf(selectedItem);
         clothesItems.splice(indexOfSelected, 1);
-        document.getElementById("currentoutfit").innerHTML = clothesItems;
+        document.querySelector("#currentoutfit").innerHTML =
+          "You are currently wearing: " + clothesItems;
         console.log("number of items removed: " + numberOfItemsRemoved);
         console.log("numer of items left: " + numberOfItemsLeft);
         console.log("clothesItems.length: " + clothesItems.length);
