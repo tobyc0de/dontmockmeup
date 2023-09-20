@@ -38,7 +38,7 @@ function removeClothing() {
         alert("you removed " + selectedItem + "! Well done.");
         userPoints++;
         numberOfItemsRemoved++;
-        numberOfItemssLeft--;
+        numberOfItemsLeft--;
         indexOfSelected = clothesItems.indexOf(selectedItem);
         clothesItems.splice(indexOfSelected, 1);
         document.querySelector("#currentoutfit").innerHTML =
