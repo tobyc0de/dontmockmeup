@@ -35,7 +35,7 @@ function removeClothing() {
 
     for (let i = 0; i < 5; i++) {
       if (selectedItem === clothesItems[i]) {
-        alert("you removed " + selectedItem + "! Well done.");
+        alert("you removed your " + selectedItem + "! Well done.");
         userPoints++;
         numberOfItemsRemoved++;
         numberOfItemsLeft--;
