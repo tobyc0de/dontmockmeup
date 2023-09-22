@@ -1,4 +1,4 @@
-// Strip poker
+// STRIP POKER
 
 let clothesItems = ["shoes", "trousers", "shirt", "hat", "jacket"];
 
