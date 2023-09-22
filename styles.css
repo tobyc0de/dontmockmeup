@@ -82,6 +82,13 @@ h2 {
   color: black;
 }
 
+#outfitlist p,
+#outfitlist ul {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
 #outfit {
   display: grid;
   grid-template-columns: auto 458px auto;
@@ -335,4 +342,246 @@ h2 {
   border: 6px solid #ffd80e;
   border-radius: 50%;
   margin: 10px;
+}
+
+body {
+  background: linear-gradient(0.4turn, rgb(196, 0, 141), #70d6ff);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #ffd80e;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+.top,
+main,
+footer {
+  padding-left: 20px;
+  border: 5px solid transparent;
+  border-bottom: none;
+  margin-left: 10px;
+  margin: auto;
+}
+
+.top,
+main {
+  max-width: 900px;
+}
+#navi {
+  color: #ffd80e;
+  font-size: 1rem;
+}
+.naviitem {
+  text-decoration: none;
+  color: #ffd80e;
+  padding: 5px 10px;
+  font-family: Impact, Haettenschweiler, sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+}
+
+.naviitemactive {
+  text-decoration: none;
+  color: #ffd80e;
+  padding: 5px 10px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+}
+
+#tobhead {
+  height: 3rem;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #ffd80e;
+}
+
+h2 {
+  text-shadow: #e9ff70 1px 0 10px;
+  color: #70d6ff;
+  font-size: 3rem;
+  font-weight: 400;
+  border-top: 10px dotted #ffd80e;
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+h2 span {
+  font-size: 50%;
+}
+
+h3 {
+  color: #ffd80e;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: black 1px 1px 1px;
+}
+
+p,
+ul,
+ol {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+ul > .educationli,
+ul > .workli {
+  list-style-image: url(./media/tinytob.png);
+  padding-bottom: 5px;
+}
+
+#hello {
+  text-align: center;
+}
+#obiwan {
+  height: 4rem;
+}
+
+#greeting {
+  color: #ffd80e;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#celebrationArea {
+  display: none;
+  background: #ffd80e;
+  border-radius: 50%;
+  max-height: 300px;
+  padding-top: 10px;
+}
+
+#celebrationArea img {
+  border-radius: 40%;
+  border: 20px solid #70d6ff;
+  max-height: 250px;
+}
+
+#houseimage {
+  width: 500px;
+  border-radius: 100%;
+}
+
+.modebutton {
+  border: 2px solid #ffd80e;
+  border-radius: 15px;
+  width: 120px;
+  padding: 5px 20px;
+  display: grid;
+  justify-content: center;
+}
+
+.modebutton:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🖖</text></svg>")
+      16 0,
+    auto;
+}
+
+.modebuttongrid {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  max-width: 50px;
+  position: fixed;
+}
+
+@media only screen and (max-width: 1130px) {
+  .modebuttongrid {
+    position: absolute;
+  }
+}
+
+#darkbutton {
+  background: linear-gradient(0.4turn, darkred, darkblue);
+  margin-right: 5px;
+  color: #ffd80e;
+}
+
+#lightbutton {
+  background: linear-gradient(0.4turn, rgb(196, 0, 141), #70d6ff);
+  display: inherit;
+  display: none;
+  color: #202020;
+}
+
+#startquizbutton {
+  background: #ffd80e;
+  margin-top: 10px;
+  border: 2px solid rgb(44, 44, 44);
+  color: #202020;
+}
+
+.yellowbutton {
+  background: #ffd80e;
+  color: black;
+  background-position: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 15px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.yellowbutton:hover {
+  background: black;
+  color: #ffd80e;
+}
+
+footer {
+  color: #ffd80e;
+  height: 200px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border-top: 10px dotted #ffd80e;
+}
+
+img:hover {
+  transform: scale(2);
+}
+
+#houseimage {
+  float: left;
+  padding: 10px 50px 10px 10px;
+}
+
+#cookiemonster {
+  position: fixed;
+  position: fixed;
+  bottom: 0px;
+  background: #70d6ff;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  color: black;
+  font-size: 1rem;
+  font-weight: 200;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 5px 0px;
+  visibility: visible;
+}
+
+#cookiebutton {
+  background: #ffd80e;
+  border: 2px solid rgb(44, 44, 44);
+  color: #202020;
+  margin-left: 1rem;
 }
