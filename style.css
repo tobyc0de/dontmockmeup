@@ -56,6 +56,10 @@ h2 {
   margin-top: 100px;
 }
 
+h2 span {
+  font-size: 60%;
+}
+
 h3 {
   color: #ffd80e;
   font-size: 2rem;

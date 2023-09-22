@@ -2,7 +2,7 @@
 
 let clothesItems = ["shoes", "trousers", "shirt", "hat", "jacket"];
 
-function showListOfClothing() {
+function UpdateListOfClothing() {
   let clothesList = document.getElementById("currentoutfit");
   clothesList.innerHTML = ""; // remove all items, then show them
   for (i = 0; i < clothesItems.length; ++i) {
@@ -12,7 +12,7 @@ function showListOfClothing() {
   }
 }
 
-showListOfClothing();
+UpdateListOfClothing();
 
 let selectedItem = "nothing";
 let indexOfSelected;
@@ -34,7 +34,7 @@ function addClothing() {
   );
   clothesItems.push(addedItem);
   numberOfItemsLeft = clothesItems.length;
-  showListOfClothing();
+  UpdateListOfClothing();
 }
 
 function removeClothing() {
@@ -43,16 +43,16 @@ function removeClothing() {
       "Please remove one of the following items: " + clothesItems
     ).toLowerCase();
 
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i <= clothesItems.length; i++) {
       if (selectedItem === clothesItems[i]) {
         alert("you removed your " + selectedItem + "! Well done.");
         indexOfSelected = clothesItems.indexOf(selectedItem);
         clothesItems.splice(indexOfSelected, 1);
         numberOfItemsLeft = clothesItems.length;
-        showListOfClothing();
+        UpdateListOfClothing();
       }
     }
-  } else {
+  } else if (numberOfItemsLeft === 0) {
     alert("You are already naked! Better put some more clothes on.");
   }
 }
