@@ -251,9 +251,7 @@ function startQuiz() {
   }
   alert("These are all my favorites: " + iceCreamFlavors);
   alert(
-    "Well done " +
-      userName +
-      "! You have answered " +
+    "Well done You have answered " +
       numberOfCorrectAnswers +
       " questions correctly. Here's a an ice cream for you 🍦"
   );
