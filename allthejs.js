@@ -153,10 +153,6 @@ function hideCookieBar() {
   document.getElementById("cookiemonster").style.visibility = "hidden";
 }
 
-// GREETING
-let userName = prompt("Hi there! 👋 What's your name?");
-document.getElementById("greeting").innerHTML = userName;
-
 function makeItDark() {
   document.body.style.background =
     "linear-gradient(0.4turn, darkred, darkblue)";
