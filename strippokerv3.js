@@ -55,5 +55,7 @@ function removeFromArray(selectedItem) {
     clothesItems.splice(indexOfSelected, 1);
     numberOfItemsLeft = clothesItems.length;
     UpdateListOfClothing();
+  } else {
+    alert("I don't think you are wearing a " + selectedItem);
   }
 }
