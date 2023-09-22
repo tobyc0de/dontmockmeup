@@ -42,17 +42,21 @@ function removeClothing() {
     selectedItem = prompt(
       "Please remove one of the following items: " + clothesItems
     ).toLowerCase();
+  removeFromArray(selectedItem)
+;}
+    else if (numberOfItemsLeft === 0) {
+      alert("You are already naked! Better put some more clothes on.");
+    };
 
-    for (let i = 0; i <= clothesItems.length; i++) {
-      if (selectedItem === clothesItems[i]) {
-        alert("you removed your " + selectedItem + "! Well done.");
-        indexOfSelected = clothesItems.indexOf(selectedItem);
+  }
+
+function removeFromArray (item) {
+if (clothesItems.includes(selectedItem) {
+  indexOfSelected = clothesItems.indexOf(selectedItem);
         clothesItems.splice(indexOfSelected, 1);
         numberOfItemsLeft = clothesItems.length;
-        UpdateListOfClothing();
-      }
-    }
-  } else if (numberOfItemsLeft === 0) {
-    alert("You are already naked! Better put some more clothes on.");
-  }
-}
+        UpdateListOfClothing();}
+
+
+  } 
+
