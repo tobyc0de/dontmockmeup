@@ -54,6 +54,7 @@ h2 {
   border-top: 10px dotted #ffd80e;
   padding-top: 100px;
   margin-top: 100px;
+  margin-bottom: 1rem;
 }
 
 h2 span {
@@ -64,6 +65,7 @@ h3 {
   color: #ffd80e;
   font-size: 2rem;
   font-weight: 400;
+  margin-top: 1rem;
 }
 
 h1,
