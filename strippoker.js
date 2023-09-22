@@ -1,6 +1,19 @@
 // Strip poker
 
 let clothesItems = ["shoes", "trousers", "shirt", "hat", "jacket"];
+
+function showListOfClothing() {
+  let clothesList = document.getElementById("currentoutfit");
+  clothesList.innerHTML = ""; // remove all items, then show them
+  for (i = 0; i < clothesItems.length; ++i) {
+    let clothesListItem = document.createElement("li");
+    clothesListItem.innerText = clothesItems[i];
+    clothesList.appendChild(clothesListItem);
+  }
+}
+
+showListOfClothing();
+
 let selectedItem = "nothing";
 let indexOfSelected;
 let numberOfItemsLeft = clothesItems.length;
@@ -13,8 +26,6 @@ function returnItem() {
 }
 
 function addClothing() {
-  document.querySelector("#currentoutfit").innerHTML = clothesItems;
-
   console.log(clothesItems);
   let addedItem = prompt(
     "You are currently wearing " +
@@ -23,8 +34,7 @@ function addClothing() {
   );
   clothesItems.push(addedItem);
   numberOfItemsLeft = clothesItems.length;
-  document.querySelector("#currentoutfit").innerHTML =
-    "You are currently wearing: " + clothesItems;
+  showListOfClothing();
 }
 
 function removeClothing() {
@@ -39,8 +49,7 @@ function removeClothing() {
         indexOfSelected = clothesItems.indexOf(selectedItem);
         clothesItems.splice(indexOfSelected, 1);
         numberOfItemsLeft = clothesItems.length;
-        document.querySelector("#currentoutfit").innerHTML =
-          "You are currently wearing: " + clothesItems;
+        showListOfClothing();
       }
     }
   } else {

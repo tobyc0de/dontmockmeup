@@ -68,6 +68,16 @@ h2 {
   text-shadow: black 1px 1px 1px;
 }
 
+#currentoutfit {
+  list-style-type: none;
+  padding: 0px;
+}
+
+#outfitlist {
+  font-size: 1rem;
+  color: black;
+}
+
 #outfit {
   display: grid;
   grid-template-columns: auto 458px auto;
