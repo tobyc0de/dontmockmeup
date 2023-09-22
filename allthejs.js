@@ -1,3 +1,20 @@
+// QUIZ INIT
+document.getElementById("startquizbutton").addEventListener("click", startQuiz);
+let questionsArr = [
+  "Was I born in Berlin? (y/n)",
+  "Do I have any siblings? (y/n)",
+  "Was I ever self-employed? (y/n)",
+  "Did I ever live near a castle? (y/n)",
+  "Did I ever live in Australia? (y/n)",
+];
+let correctAnswersArr = ["n", "y", "y", "y", "n"];
+let possibleAnswersArr = ["y, n"];
+let numberOfCorrectAnswers = 0;
+let numberOfGuesses = 0;
+let q6Ended = "nope";
+let sevenQuestionscorrect = "no";
+
+// DARKMODE
 let lightmode = "light";
 console.log(lightmode);
 
@@ -18,6 +35,8 @@ function makeItLight() {
   document.getElementById("lightbutton").style.display = "none";
   document.getElementById("darkbutton").style.display = "flex";
 }
+
+// MIRROR GAME
 
 function lookInTheMirror() {
   // shoes
@@ -49,6 +68,7 @@ function lookInTheMirror() {
   document.getElementById("verdict").innerHTML = "Verdict: Great outfit!";
 }
 
+// PIZZA CONFIGURATOR
 function addCheese() {
   document.getElementById("texttopping").innerHTML += "🧀";
 }
@@ -76,6 +96,8 @@ function confirmBanana() {
 function resetToppings() {
   document.getElementById("texttopping").innerHTML = "";
 }
+
+// MAGIC SHOW
 
 function magicShow() {
   let secretContent;
@@ -121,7 +143,7 @@ function getRatingFor() {
     }
 }
 
-// cookie bar
+// COOKIE BAR
 
 document
   .getElementById("cookiebutton")
@@ -131,7 +153,7 @@ function hideCookieBar() {
   document.getElementById("cookiemonster").style.visibility = "hidden";
 }
 
-// greeting
+// GREETING
 let userName = prompt("Hi there! 👋 What's your name?");
 document.getElementById("greeting").innerHTML = userName;
 
@@ -153,22 +175,7 @@ function makeItLight() {
   document.getElementById("darkbutton").style.display = "flex";
 }
 
-// quiz
-document.getElementById("startquizbutton").addEventListener("click", startQuiz);
-
-let questionsArr = [
-  "Was I born in Berlin? (y/n)",
-  "Do I have any siblings? (y/n)",
-  "Was I ever self-employed? (y/n)",
-  "Did I ever live near a castle? (y/n)",
-  "Did I ever live in Australia? (y/n)",
-];
-let correctAnswersArr = ["n", "y", "y", "y", "n"];
-let possibleAnswersArr = ["y, n"];
-let numberOfCorrectAnswers = 0;
-let numberOfGuesses = 0;
-let q6Ended = "nope";
-let sevenQuestionscorrect = "no";
+// QUIZ QUESTIONS
 
 function startQuiz() {
   for (let index = 0; index < questionsArr.length; index++) {
