@@ -44,7 +44,9 @@ function removeClothing() {
     ).toLowerCase();
     removeFromArray(selectedItem);
   } else if (numberOfItemsLeft === 0) {
-    alert("You are already naked! Better put some more clothes on.");
+    alert(
+      "You are already naked, that's awesome! Better put some more clothes on."
+    );
   }
 }
 
