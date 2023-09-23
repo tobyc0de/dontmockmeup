@@ -516,33 +516,33 @@ ul > .workli {
 }
 
 #startquizbutton {
-  background: black;
+  background: #00003f;
   margin-top: 10px;
   border: 2px solid #ffd80e;
   color: #ffd80e;
 }
 
 #startquizbutton:hover {
-  background: black;
+  background: yellow;
   margin-top: 10px;
   border: 2px solid rgb(44, 44, 44);
-  color: #ffd80e;
+  color: #00003f;
 }
 
 .yellowbutton {
-  background: black;
+  background: linear-gradient(0.4turn, darkred, darkblue);
   color: #ffd80e;
   background-position: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin: 15px;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 1.5rem;
   border: 3px solid #ffd80e;
 }
 
 .yellowbutton:hover {
-  background: #ffd80e;
-  color: black;
+  background: linear-gradient(0.4turn, rgb(196, 0, 141), #70d6ff);
+  color: #00003f;
 }
 
 img:hover {
