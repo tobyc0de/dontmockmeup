@@ -238,23 +238,102 @@ h2 {
 #navi {
   color: #ffd80e;
   font-size: 1rem;
+  text-transform: lowercase;
 }
 .naviitem {
   text-decoration: none;
   color: #ffd80e;
-  padding: 5px 10px;
+  padding: 5px 8px 5px 0px;
   font-family: Impact, Haettenschweiler, sans-serif;
   font-weight: 200;
   letter-spacing: 0.1rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
+}
+
+.naviitem:not(:first-child)::before {
+  content: "• • •\00a0 \00a0 ";
+  color: #ffd80e;
+  -webkit-text-fill-color: #ffd80e;
+  -webkit-text-stroke: 0px;
+}
+
+.naviitem:first-child::before {
+  content: "• • •\00a0 \00a0 ";
+  color: #ffd80e;
+  -webkit-text-fill-color: #ffd80e;
+  -webkit-text-stroke: 0px;
+}
+
+.naviitem:not(.naviitemactive):hover {
+  text-decoration: none;
+  color: #ffd80e;
+  -webkit-text-fill-color: #70d6ff;
+  -webkit-text-stroke: 0px;
+}
+
+.naviitem:hover::before {
+  text-decoration: none;
+  color: #ffd80e;
+  -webkit-text-fill-color: #ffd80e;
+  -webkit-text-stroke: 0px;
 }
 
 .naviitemactive {
   text-decoration: none;
   color: #ffd80e;
-  padding: 5px 10px;
+  -webkit-text-fill-color: #ffd80e;
+  -webkit-text-stroke: 0px;
+}
+
+.naviitemactive::before {
+  text-decoration: none;
+  color: #ffd80e;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
 }
+
+.naviitem:last-child::after {
+  content: "\00a0 \00a0  • • •";
+  color: #ffd80e;
+  -webkit-text-fill-color: #ffd80e;
+  -webkit-text-stroke: 0px;
+}
+
+.naviitem:last-child:hover::after {
+  text-decoration: none;
+  color: #ffd80e;
+  -webkit-text-fill-color: #ffd80e;
+  -webkit-text-stroke: 0px;
+}
+
+/* 
+.naviitemactive + a::before {
+  -webkit-text-fill-color: #ffd80e;
+  -webkit-text-stroke: 0px;
+} */
+
+/* .naviitem::after {
+  content: "\00a0 \00a0• ";
+  color: #ffd80e;
+} */
+
+/* .naviitem:first-child::before {
+  content: " •\00a0 \00a0 ";
+  color: #ffd80e;
+} */
+
+/* .naviitem:hover {
+  text-decoration: overline 3px;
+}
+
+.naviitem:after {
+  content: "\00a0 \00a0 •••";
+}
+
+.naviitem:before {
+  content: "\00a0 \00a0 •••";
+} */
 
 .threebuttongrid {
   display: grid;
@@ -400,26 +479,6 @@ footer {
 .top,
 main {
   max-width: 900px;
-}
-#navi {
-  color: #ffd80e;
-  font-size: 1rem;
-}
-.naviitem {
-  text-decoration: none;
-  color: #ffd80e;
-  padding: 5px 10px;
-  font-family: Impact, Haettenschweiler, sans-serif;
-  font-weight: 200;
-  letter-spacing: 0.1rem;
-}
-
-.naviitemactive {
-  text-decoration: none;
-  color: #ffd80e;
-  padding: 5px 10px;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px;
 }
 
 #tobhead {
