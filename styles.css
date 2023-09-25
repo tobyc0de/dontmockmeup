@@ -83,6 +83,7 @@ h3 {
 #currentoutfit > li {
   padding-left: 1rem;
   text-indent: -0.75rem;
+  font-size: 1.5rem;
 }
 #currentoutfit > li:hover {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👌</text></svg>")
@@ -90,20 +91,18 @@ h3 {
     auto;
 }
 
+#currentoutfit > li::before,
 #currentoutfit > li::after {
-  content: "👌";
-}
-
-#outfitlist {
-  font-size: 1rem;
-  color: #ffd80e;
+  content: "•";
+  font-size: 2rem;
 }
 
 #outfitlist p,
 #outfitlist ul {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #ffd80e;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 #outfit {
@@ -165,6 +164,11 @@ h3 {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+#texttopping {
+  text-shadow: 0 0 1px #ffd80e, -1px -1px 1px #ffd80e, -1px 1px 1px #ffd80e,
+    1px 1px 1px #ffd80e, 1px -1px 1px #ffd80e;
 }
 
 .blackbutton {
@@ -292,34 +296,6 @@ h3 {
   -webkit-text-fill-color: #ffd80e;
   -webkit-text-stroke: 0px;
 }
-
-/* 
-.naviitemactive + a::before {
-  -webkit-text-fill-color: #ffd80e;
-  -webkit-text-stroke: 0px;
-} */
-
-/* .naviitem::after {
-  content: "\00a0 \00a0• ";
-  color: #ffd80e;
-} */
-
-/* .naviitem:first-child::before {
-  content: " •\00a0 \00a0 ";
-  color: #ffd80e;
-} */
-
-/* .naviitem:hover {
-  text-decoration: overline 3px;
-}
-
-.naviitem:after {
-  content: "\00a0 \00a0 •••";
-}
-
-.naviitem:before {
-  content: "\00a0 \00a0 •••";
-} */
 
 .threebuttongrid {
   display: grid;
